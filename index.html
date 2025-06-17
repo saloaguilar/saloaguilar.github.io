@@ -1,7 +1,163 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salome Aguilar Llanes</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #222;
+    }
+    header {
+      background: #004064;
+      color: #fff;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.4rem;
+      flex: 1 1 200px;
+    }
+    nav {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.4rem 0.6rem;
+      border-radius: 4px;
+    }
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 960px;
+      margin: auto;
+    }
+    section:nth-of-type(odd) {
+      background: #f5f7fa;
+    }
+    h2 {
+      margin-top: 0;
+      color: #004064;
+    }
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { color: #ddd; background: #121212; }
+      header { background: #002c46; }
+      nav a:hover { background: rgba(255, 255, 255, 0.15); }
+      section:nth-of-type(odd) { background: #1e1e1e; }
+      footer { background: #1e1e1e; }
+    }
+  </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <header>
+    <h1>Salome Aguilar Llanes</h1>
+    <nav>
+      <a href="#summary">Summary</a>
+      <a href="#cv">CV</a>
+      <a href="#research">Research</a>
+      <a href="#jann">JANN</a>
+      <a href="#other">Other</a>
+    </nav>
+  </header>
+
+  <!-- Summary Section -->
+  <section id="summary">
+    <h2>Summary</h2>
+    <p>
+    I’m a PhD candidate in Economics at MIT, where I study the economics of education, development and some applications of machine learning tools. I run field experiments in education and use machine learning to analyze classroom interactions. Before coming to MIT, I earned an MA in International Education Policy Analysis at Stanford University and a BA in Economics from ITAM in Mexico City. Thanks to this research, I co-founded Jóvenes Ayudando a Niñas y Niños A.C., an NGO that connects volunteer tutors with primary- and middle-school students across Mexico to provide free online tutoring.
+    </p>
+  </section>
+
+  <!-- CV Section -->
+  <section id="cv">
+    <h2>Curriculum&nbsp;Vitae</h2>
+    <p>
+      You can download my full CV
+      <a href="CV.pdf" target="_blank" rel="noopener">here (PDF)</a>.
+    </p>
+    <p>[Optionally add a short highlight reel of key appointments and awards.]</p>
+  </section>
+
+  <!-- Research Section -->
+  <section id="research">
+    <h2>Research</h2>
+    <p>
+      The most recent drafts, slide decks, and replication code are stored in
+      <a href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID_HERE" target="_blank" rel="noopener">this Google&nbsp;Drive folder</a>.
+      Keeping a single shared folder means you can update files once and have the
+      latest version available on your website without changing any code.
+    </p>
+    <ul>
+      <li><strong>Paper&nbsp;Title&nbsp;1.</strong> See Drive folder for latest draft.</li>
+      <li><strong>Paper&nbsp;Title&nbsp;2.</strong> Under review — draft in Drive.</li>
+    </ul>
+  </section>
+
+  <!-- JANN Section -->
+    <section id="jann">
+    <h2>JANN</h2>
+    <!-- Place your logo file in the same folder (or adjust the path) -->
+    <img src="pictures/jann-logo.png" alt="JANN logo" class="logo" />
+
+    <p>
+        <strong>Jóvenes Ayudando a Niños y Niñas A.C. (JANN)</strong> is a nonprofit
+        organization founded in 2023 to tackle Mexico’s learning gap through
+        <em>free, 100&nbsp;% online tutoring. 
+    </p>
+
+    <p>
+        University students sign up to participate as volunteer tutors.
+        They are assigned a group of students to work with remotely with groups  of 1&nbsp;–&nbsp;5 students,
+        they deliver 2&nbsp;h of tutoring per week for 15&nbsp;–&nbsp;24&nbsp;weeks</li>
+    </p>
+
+    <ul>
+
+        <li><strong>Beneficiaries</strong>: 24&nbsp;000&nbsp;+ elementary and middle-school students have received classes</li>
+        <li><strong>Volunteers </strong>: 8&nbsp;000&nbsp;+ university tutors</li>
+    </ul>
+    <p>
+        Learn more at
+        <a href="https://jann.mx" target="_blank" rel="noopener">jann.mx</a>.
+        If you’d like to support JANN's mission, consider donating
+        <a href="https://www.every.org/jann?viewport=desktop" target="_blank" rel="noopener">here</a>.
+    </p>
+    </section>
+
+
+  <!-- Other Section -->
+  <section id="other">
+    <h2>Other</h2>
+    <p>
+        If you live in Mexico or any country in Latin America and you are considering applying to a PhD in economics here is a resource a group of us put together:
+        <a href="https://jann.mx" target="_blank" rel="noopener">jann.mx</a>.
+        If you’d like to support JANN's mission, consider donating
+        <a href="https://www.every.org/jann?viewport=desktop" target="_blank" rel="noopener">here</a>.
+    </p>
+  </section>
+
+  <footer>&copy; 2025 Salome Aguilar Llanes</footer>
 </body>
 </html>
