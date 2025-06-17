@@ -75,6 +75,11 @@
     float: right;       /* optional: lets text wrap on the left */
     margin-left: 1rem;  /* breathing room if you float it */
   }
+    .profile-pic {
+    float: left;          /* Floats the image to the left, so text wraps on the right side :contentReference[oaicite:2]{index=2} */
+    width: 120px;         /* Sets the image width to ~120px (maintains aspect ratio on height) */
+    margin: 0 15px 15px 0;/* Adds margin: top 0, right 15px, bottom 15px, left 0 for spacing around the image :contentReference[oaicite:3]{index=3} */
+    }
   </style>
 </head>
 <body>
@@ -97,7 +102,8 @@
 
     <p>
         
-    <img src="pictures/foto_salo.png" alt="Salo" class="logo" />
+    <img src="pictures/foto_salo.jpg" alt="Profile photo" class="profile-pic">
+    
     I’m a PhD candidate in Economics at MIT. I study the economics of education, development and some applications of machine learning tools. I run field experiments in education and use machine learning to analyze classroom interactions. Before coming to MIT, I earned an MA in International Education Policy Analysis at Stanford University and a BA in Economics from ITAM in Mexico City. Thanks to this research, I co-founded Jóvenes Ayudando a Niñas y Niños A.C., an NGO that connects volunteer tutors with primary- and middle-school students across Mexico to provide free online tutoring.
     </p>
   </section>
