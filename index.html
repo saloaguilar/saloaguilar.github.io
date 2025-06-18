@@ -44,7 +44,6 @@
     }
 
 
-    /* ---- dropdown button ---- */
     .dropdown {
       position: relative;
     }
@@ -105,31 +104,15 @@
     }
 
     @media (prefers-color-scheme: dark) {
-    /* text + overall background */
     body   { color: #f0f0f0; background: #2d2d2d; }
-
-    /* header/nav background (softer teal-navy) */
     header { background: #115d7a; }
-
-    /* nav links stay white; hover keeps subtle highlight */
     nav a:hover { background: rgba(255, 255, 255, 0.08); }
-
-    /* lighter heading colour for readability */
     h2 { color: #fffdfa; }
-
-    /* make in‑text hyperlinks a muted teal instead of bright blue */
     section a { color: #89c5d8; }
     section a:hover { color: #b1e1f2; }
-
-    /* alternating section background — mid‑gray */
     section:nth-of-type(odd) { background: #3a3a3a; }
-
-    /* footer background */
     footer { background: #3a3a3a; }
-
-    /* dropdown menu colour tweak */
     .dropdown-content { background: #115d7a; }
-    
     header { background: #115d7a; }
     nav a:hover { background: rgba(255, 255, 255, 0.08); }
     .dropdown-content { background: #115d7a; }
@@ -138,15 +121,15 @@
     }
 
     img.logo {
-    width: 300px;       /* pick any size you like, e.g. 120px or 100px */
-    height: auto;       /* keeps the aspect ratio */
-    float: right;       /* optional: lets text wrap on the left */
-    margin-left: 1rem;  /* breathing room if you float it */
+    width: 300px;       
+    height: auto;       
+    float: right;       
+    margin-left: 1rem;  
   }
     .profile-pic {
-    float: left;          /* Floats the image to the left, so text wraps on the right side :contentReference[oaicite:2]{index=2} */
-    width: 230px;         /* Sets the image width to ~120px (maintains aspect ratio on height) */
-    margin: 0 15px 15px 0;/* Adds margin: top 0, right 15px, bottom 15px, left 0 for spacing around the image :contentReference[oaicite:3]{index=3} */
+    float: left;          
+    width: 230px;         
+    margin: 0 15px 15px 0;
     }
   </style>
 </head>
@@ -161,7 +144,7 @@
       <a href="#jann">JANN</a>
       <a href="#intendere">Intendere</a>
       <a href="#other">Other</a>
-            <!-- Dropdown for external links -->
+
       <div class="dropdown">
         <button class="dropdown-button" aria-haspopup="true" aria-expanded="false">People ▾</button>
         <div class="dropdown-content" role="menu">
@@ -306,7 +289,6 @@
   <!-- JANN Section -->
     <section id="jann">
     <h2>JANN</h2>
-    <!-- Place your logo file in the same folder (or adjust the path) -->
     <img src="pictures/jann_logo.png" alt="JANN logo" class="logo" />
     <p>
         <strong>Jóvenes Ayudando a Niños y Niñas A.C. (JANN)</strong> is a nonprofit
@@ -343,7 +325,6 @@
   <!-- Intendere Section -->
     <section id="intendere">
     <h2>Intendere</h2>
-    <!-- Place your logo file in the same folder (or adjust the path) -->
     <img src="pictures/intendere_logo.png" alt="Intendere logo" class="logo" />
 
 
@@ -396,7 +377,6 @@
 
   <footer>&copy; 2025 Salome Aguilar Llanes</footer>
 
-    <!-- simple dropdown toggle script -->
   <script>
     document.addEventListener('click', function (e) {
       const dropdown = document.querySelector('.dropdown');
