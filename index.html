@@ -43,6 +43,48 @@
       background: rgba(255, 255, 255, 0.25);
     }
 
+
+    /* ---- dropdown button ---- */
+    .dropdown {
+      position: relative;
+    }
+    .dropdown-button {
+      background: none;
+      border: 1px solid #fff;
+      color: #fff;
+      padding: 0.35rem 0.75rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font: inherit;
+    }
+    .dropdown-button:focus {
+      outline: 2px dashed #fff;
+      outline-offset: 2px;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 110%;
+      background: #004064;
+      border-radius: 4px;
+      min-width: 160px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+    }
+    .dropdown-content a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem 0.75rem;
+      white-space: nowrap;
+    }
+    .dropdown-content a:hover {
+      background: rgba(255,255,255,0.15);
+    }
+    .dropdown.show .dropdown-content {
+      display: block;
+    }
+
     section {
       padding: 3rem 2rem;
       max-width: 960px;
@@ -103,6 +145,16 @@
       <a href="#jann">JANN</a>
       <a href="#intendere">Intendere</a>
       <a href="#other">Other</a>
+            <!-- Dropdown for external links -->
+      <div class="dropdown">
+        <button class="dropdown-button" aria-haspopup="true" aria-expanded="false">Others ▾</button>
+        <div class="dropdown-content" role="menu">
+          <a href="https://belencarolina.com/" target="_blank" rel="noopener" role="menuitem">Belen Saldías</a>
+          <a href="https://www.isabellaloaiza.com/" target="_blank" rel="noopener" role="menuitem">Isabella Loaiza</a>
+          <a href="https://www.phoenixfalc.com/" target="_blank" rel="noopener" role="menuitem">Alessandra Davy-Falconi</a>
+          <a href="https://www.cassandranlee.com/" target="_blank" rel="noopener" role="menuitem">Cassie Lee</a>
+        </div>
+      </div>
     </nav>
   </header>
 
@@ -327,5 +379,21 @@
   </section>
 
   <footer>&copy; 2025 Salome Aguilar Llanes</footer>
+
+    <!-- simple dropdown toggle script -->
+  <script>
+    document.addEventListener('click', function (e) {
+      const dropdown = document.querySelector('.dropdown');
+      if (!dropdown) return;
+      const button = dropdown.querySelector('.dropdown-button');
+      if (button.contains(e.target)) {
+        dropdown.classList.toggle('show');
+        button.setAttribute('aria-expanded', dropdown.classList.contains('show'));
+      } else if (!dropdown.contains(e.target)) {
+        dropdown.classList.remove('show');
+        button.setAttribute('aria-expanded', 'false');
+      }
+    });
+  </script>
 </body>
 </html>
