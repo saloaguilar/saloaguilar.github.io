@@ -63,11 +63,20 @@
     }
 
     @media (prefers-color-scheme: dark) {
-    body   { color: #e0e0e0; background: #1a1a1a; }
-    header { background: #0b3a53; }   /* less saturated navy */
-    nav a:hover { background: rgba(255, 255, 255, 0.10); }
-    section:nth-of-type(odd) { background: #242424; }  /* soft charcoal */
-    footer { background: #242424; }
+    /* text + overall background */
+    body   { color: #f0f0f0; background: #2d2d2d; }
+
+    /* header/nav background (softer teal-navy) */
+    header { background: #115d7a; }
+
+    /* hover highlight — keep subtle */
+    nav a:hover { background: rgba(255, 255, 255, 0.08); }
+
+    /* alternating section background — mid-gray */
+    section:nth-of-type(odd) { background: #3a3a3a; }
+
+    /* footer background */
+    footer { background: #3a3a3a; }
     }
 
     img.logo {
@@ -78,7 +87,7 @@
   }
     .profile-pic {
     float: left;          /* Floats the image to the left, so text wraps on the right side :contentReference[oaicite:2]{index=2} */
-    width: 250px;         /* Sets the image width to ~120px (maintains aspect ratio on height) */
+    width: 230px;         /* Sets the image width to ~120px (maintains aspect ratio on height) */
     margin: 0 15px 15px 0;/* Adds margin: top 0, right 15px, bottom 15px, left 0 for spacing around the image :contentReference[oaicite:3]{index=3} */
     }
   </style>
